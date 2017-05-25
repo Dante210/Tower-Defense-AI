@@ -11,7 +11,6 @@ namespace Assets.Scripts
 {
     public static class Extensions
     {
-
         public static void setRoadDirection(this RoadTile roadTile, IPoint currentPoint,
             Dictionary<string, Func<RoadTile, IPoint, bool>> predicates){
             foreach (var predicate in predicates)
@@ -19,8 +18,7 @@ namespace Assets.Scripts
         }
 
         public static Dictionary<string, double> calculateValues(this Dictionary<string, int> @this,
-            Dictionary<string, double> values)
-        {
+            Dictionary<string, double> values){
             var temp = values;
             var sum = (double) @this.Values.Sum();
             foreach (var i in @this)
@@ -54,22 +52,20 @@ namespace Assets.Scripts
                 file.Close();
                 return @this;
             }
-            else{
-                throw new ArgumentException("Data file was not found");
-            }
+            throw new ArgumentException("Data file was not found");
         }
 
-        public static void destroy<A>(this IEnumerable<A> @this, Func<A, GameObject> func)
-        {
+        public static void destroy<A>(this IEnumerable<A> @this, Func<A, GameObject> func){
             foreach (var i in @this)
-            {
                 Object.Destroy(func(i));
-            }
         }
 
-        public static bool containsPoint(this IEnumerable<RoadTile> @this, Point point)
-        {
+        public static bool containsPoint(this IEnumerable<RoadTile> @this, IPoint point){
             return @this.Any(roadTile => roadTile.x == point.x && roadTile.y == point.y);
+        }
+
+        public static bool checkPoint(this IPoint @this, IEnumerable<Func<IPoint, bool>> predicates){
+            return predicates.All(predicate => predicate(@this));
         }
     }
 }

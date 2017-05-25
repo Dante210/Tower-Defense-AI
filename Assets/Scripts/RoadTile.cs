@@ -9,12 +9,17 @@ namespace Assets.Scripts
         public RoadTile(){
         }
 
+        public RoadTile(IPoint point){
+            x = point.x;
+            y = point.y;
+        }
+
 
         public RoadTile(int x, int y){
             this.x = x;
             this.y = y;
 
-            leadsTo = new Dictionary<string, bool> {
+            leadsTo = new Dictionary<string, bool>{
                 ["Up"] = false,
                 ["Down"] = false,
                 ["Left"] = false,
@@ -32,7 +37,7 @@ namespace Assets.Scripts
             this.x = x;
             this.y = y;
 
-            leadsTo = new Dictionary<string, bool> {
+            leadsTo = new Dictionary<string, bool>{
                 ["Up"] = false,
                 ["Down"] = false,
                 ["Left"] = false,
@@ -40,10 +45,8 @@ namespace Assets.Scripts
             };
         }
 
-        public string getLeadKey()
-        {
+        public string getLeadKey(){
             return leadsTo.SingleOrDefault(pair => pair.Value).Key;
-            
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using UnityEngine;
 using Random = System.Random;
 
@@ -9,28 +8,74 @@ namespace Assets.Scripts
 {
     public class RoadGenerator
     {
-        public Point startPoint { get; }
+        public RoadGenerator(int minX, int maxX, int minY, int maxY){
+            this.minX = minX;
+            this.maxX = maxX;
+            this.minY = minY;
+            this.maxY = maxY;
 
-        public RoadGenerator(int startPosX, int minY, int maxY)
-        {
             var random = new Random();
             var y = random.Next(minY, maxY);
-            this.startPoint =  new Point(startPosX, y);
+            startPoint = new Point(minX, y);
+            generatedRoadTiles = new List<RoadTile>();
+            setConditions();
         }
 
+        public Point startPoint{ get; }
+        public List<RoadTile> generatedRoadTiles{ get; }
+        List<Func<IPoint, bool>> conditions{ get; set; }
+        int minY{ get; }
+        int maxY{ get; }
+        int minX{ get; }
+        int maxX{ get; }
 
-        public List<RoadTile> generateRoad(GameObject prefab, Vector3 startPos, Func<int, int, bool> finish, List<RoadInfo> roadInfos)
-        {
-            var generatedRoad = new List<RoadTile>();
+        Func<string, IPoint, IPoint> getNextPoint => (direction, point) => {
+            switch (direction){
+                case "Up":
+                    return new Point(point.x, point.y + 1);
+                case "Down":
+                    return new Point(point.x, point.y - 1);
+                case "Left":
+                    return new Point(point.x - 1, point.y);
+                case "Right":
+                    return new Point(point.x + 1, point.y);
+                default:
+                    return point;
+            }
+        };
+
+        void setConditions(){
+            conditions = new List<Func<IPoint, bool>>{
+                point => !generatedRoadTiles.containsPoint(point),
+                point => point.x >= minX && point.x <= maxX,
+                point => point.y >= minY && point.y <= maxY
+            };
+        }
+
+        public List<RoadTile> generateRoad(GameObject prefab, Vector3 startPos, Func<int, bool> finish,
+            List<RoadInfo> roadInfos, Dictionary<string, Func<RoadTile, IPoint, bool>> roadPath){
             var indexInSequence = 0;
             var roadTile = TileFactory.makeRoadTile(prefab, startPos, startPoint);
-            generatedRoad.Add(roadTile);
+            generatedRoadTiles.Add(roadTile);
             var currentTile = roadTile;
-            while (!finish(currentTile.x, currentTile.y))
-            {
-                
+            while (!finish(currentTile.x)){
+                var nextTile = next(currentTile, roadInfos[indexInSequence++], getNextPoint, conditions);
+                var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(nextTile.x, nextTile.y));
+                generatedRoadTiles.Add(generatedTile);
+                currentTile.setRoadDirection(new Point(generatedTile.x, generatedTile.y), roadPath);
+                currentTile = generatedTile;
             }
-            return generatedRoad;
+            return generatedRoadTiles;
+        }
+
+        static RoadTile next(IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
+            IEnumerable<Func<IPoint, bool>> conditions){
+            var leads = currentInfo.values.OrderByDescending(pair => pair.Value);
+            foreach (var lead in leads){
+                var nextPoint = getNextPoint(lead.Key, current);
+                if (nextPoint.checkPoint(conditions)) return new RoadTile(nextPoint);
+            }
+            throw new Exception("Couldn't create next road tile");
         }
     }
 }

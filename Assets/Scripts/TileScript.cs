@@ -10,7 +10,7 @@ namespace Assets.Scripts
 
 
         void Awake(){
-            levelManager = GameObject.FindObjectOfType<LevelManager>();
+            levelManager = FindObjectOfType<LevelManager>();
         }
 
         void OnMouseDown(){
@@ -38,7 +38,5 @@ namespace Assets.Scripts
             return Instantiate(prefab,
                 new Vector3(startingPos.x + i, startingPos.y + j, 0), Quaternion.identity);
         }
-
-
     }
 }

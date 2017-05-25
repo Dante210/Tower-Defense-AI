@@ -6,24 +6,23 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
+    public int Length, Width;
     [SerializeField] GameObject BackgroundTile;
     [SerializeField] bool drawingRoad = true;
 
     readonly Dictionary<Point, TileScript> groundTiles = new Dictionary<Point, TileScript>();
 
     readonly Dictionary<string, Func<RoadTile, IPoint, bool>> roadPath =
-        new Dictionary<string, Func<RoadTile, IPoint, bool>> {
-            ["Down"]  = ((thisTile, tileBefore) => (thisTile.y == tileBefore.y + 1) && (thisTile.x == tileBefore.x)),
-            ["Up"]    = ((thisTile, tileBefore) => (thisTile.y == tileBefore.y - 1) && (thisTile.x == tileBefore.x)),
-            ["Left"]  = ((thisTile, tileBefore) => (thisTile.x == tileBefore.x + 1) && (thisTile.y == tileBefore.y)),
-            ["Right"] = ((thisTile, tileBefore) => (thisTile.x == tileBefore.x - 1) && (thisTile.y == tileBefore.y)),
+        new Dictionary<string, Func<RoadTile, IPoint, bool>>{
+            ["Down"] = (thisTile, tileBefore) => thisTile.y == tileBefore.y + 1 && thisTile.x == tileBefore.x,
+            ["Up"] = (thisTile, tileBefore) => thisTile.y == tileBefore.y - 1 && thisTile.x == tileBefore.x,
+            ["Left"] = (thisTile, tileBefore) => thisTile.x == tileBefore.x + 1 && thisTile.y == tileBefore.y,
+            ["Right"] = (thisTile, tileBefore) => thisTile.x == tileBefore.x - 1 && thisTile.y == tileBefore.y
         };
-
-    public  int Length, Width;
 
     [SerializeField] GameObject RoadTile;
 
-    readonly List<RoadTile> roadTiles = new List<RoadTile>();
+    List<RoadTile> roadTiles = new List<RoadTile>();
     //    Dictionary<Point, TileScript> towers = new Dictionary<Point, TileScript>();
 
     void Awake(){
@@ -35,14 +34,24 @@ public class LevelManager : MonoBehaviour
 
     void Update(){
         if (Input.GetKeyDown(KeyCode.Space)){
-            Debug.Log("");
-            var data = new DataSaveLoad(Width * Length);
-            data.updateRoadsData(roadTiles);
-            roadTiles.destroy(tile => tile.gameObject);
-            roadTiles.Clear();
+            var data = new DataSaveLoad(Length * Width);
+            saveAndClearRoad(data);
+        }
+        if (Input.GetKeyDown(KeyCode.Return)){
+            var data = new DataSaveLoad(Length * Width);
+            saveAndClearRoad(data);
+            drawingRoad = false;
+            var roadGenerator = new RoadGenerator(0, Length, 0, Width);
+            roadTiles = roadGenerator.generateRoad(RoadTile, transform.position, x => x == Length - 1,
+                data.roadsInfo, roadPath);
         }
     }
 
+    void saveAndClearRoad(DataSaveLoad data){
+        data.updateRoadsData(roadTiles);
+        roadTiles.destroy(tile => tile.gameObject);
+        roadTiles.Clear();
+    }
 
     //Point calls to handle click
     public void handleTileClick(Point point){
@@ -61,7 +70,6 @@ public class LevelManager : MonoBehaviour
                 var roadTile = TileFactory.makeRoadTile(RoadTile, transform.position, point);
                 roadTiles.Add(roadTile);
             }
-            
         }
     }
 
@@ -71,10 +79,9 @@ public class LevelManager : MonoBehaviour
 
     bool pathIsValid(RoadTile roadTile){
         var counter = 0;
-        foreach (var item in roadTile.leadsTo){
+        foreach (var item in roadTile.leadsTo)
             if (item.Value)
                 counter++;
-        }
         return counter == 1;
     }
 
