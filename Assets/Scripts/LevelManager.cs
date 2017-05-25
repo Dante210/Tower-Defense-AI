@@ -23,7 +23,7 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] GameObject RoadTile;
 
-    readonly Dictionary<Point, RoadTile> roadTiles = new Dictionary<Point, RoadTile>();
+    readonly List<RoadTile> roadTiles = new List<RoadTile>();
     //    Dictionary<Point, TileScript> towers = new Dictionary<Point, TileScript>();
 
     void Awake(){
@@ -38,25 +38,28 @@ public class LevelManager : MonoBehaviour
             Debug.Log("");
             var data = new DataSaveLoad(Width * Length);
             data.updateRoadsData(roadTiles);
+            roadTiles.destroy(tile => tile.gameObject);
+            roadTiles.Clear();
         }
     }
+
 
     //Point calls to handle click
     public void handleTileClick(Point point){
         if (drawingRoad){
-            if (roadTiles.ContainsKey(point)) return;
+            if (roadTiles.containsPoint(point)) return;
 
             if (roadTiles.Any()){
                 var roadTileBefore = roadTiles.Last();
-                roadTileBefore.Value.setRoadDirection(point, roadPath);
-                if (pathIsValid(roadTileBefore.Value)){
+                roadTileBefore.setRoadDirection(point, roadPath);
+                if (pathIsValid(roadTileBefore)){
                     var roadTile = TileFactory.makeRoadTile(RoadTile, transform.position, point);
-                    roadTiles.Add(new Point(roadTile.x, roadTile.y), roadTile);
+                    roadTiles.Add(roadTile);
                 }
             }
             else{
                 var roadTile = TileFactory.makeRoadTile(RoadTile, transform.position, point);
-                roadTiles.Add(new Point(roadTile.x, roadTile.y), roadTile);
+                roadTiles.Add(roadTile);
             }
             
         }
@@ -80,10 +83,6 @@ public class LevelManager : MonoBehaviour
         setBackground();
     }
 
-//    int goToIndex<A>(int index, IEnumerable<A> source, Func<IEnumerable<A>, int> predicate){
-//        if (index)
-//            return predicate(source);
-//    }
 
     void setBackground(){
         for (var i = 0; i < Length; i++)

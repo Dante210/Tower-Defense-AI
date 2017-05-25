@@ -40,8 +40,10 @@ namespace Assets.Scripts
             };
         }
 
-        public string getLeadKey(){
-            return (from lead in leadsTo where lead.Value select lead.Key).FirstOrDefault();
+        public string getLeadKey()
+        {
+            return leadsTo.SingleOrDefault(pair => pair.Value).Key;
+            
         }
     }
 }

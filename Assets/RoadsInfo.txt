@@ -1,180 +1,180 @@
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
--3Up -3Down -3Left -3Right -3Up -3Down -3Left -3Right -3
+  0     Up   0   Down   0   Left   0  Right   5 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+  1     Up   0   Down   1   Left   0  Right   4 |      Up 0.000   Down 0.200   Left 0.000  Right 0.800
+  2     Up   0   Down   1   Left   0  Right   4 |      Up 0.000   Down 0.200   Left 0.000  Right 0.800
+  3     Up   2   Down   2   Left   0  Right   0 |      Up 0.500   Down 0.500   Left 0.000  Right 0.000
+  4     Up   2   Down   2   Left   0  Right   0 |      Up 0.500   Down 0.500   Left 0.000  Right 0.000
+  5     Up   1   Down   2   Left   0  Right   1 |      Up 0.250   Down 0.500   Left 0.000  Right 0.250
+  6     Up   0   Down   1   Left   0  Right   2 |      Up 0.000   Down 0.333   Left 0.000  Right 0.667
+  7     Up   1   Down   0   Left   1  Right   1 |      Up 0.333   Down 0.000   Left 0.333  Right 0.333
+  8     Up   0   Down   0   Left   1  Right   1 |      Up 0.000   Down 0.000   Left 0.500  Right 0.500
+  9     Up   0   Down   0   Left   1  Right   1 |      Up 0.000   Down 0.000   Left 0.500  Right 0.500
+ 10     Up   1   Down   0   Left   0  Right   0 |      Up 1.000   Down 0.000   Left 0.000  Right 0.000
+ 11     Up   1   Down   0   Left   0  Right   0 |      Up 1.000   Down 0.000   Left 0.000  Right 0.000
+ 12     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 13     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 14     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 15     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 16     Up   1   Down   0   Left   0  Right   0 |      Up 1.000   Down 0.000   Left 0.000  Right 0.000
+ 17     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 18     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 19     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 20     Up   0   Down   1   Left   0  Right   0 |      Up 0.000   Down 1.000   Left 0.000  Right 0.000
+ 21     Up   0   Down   1   Left   0  Right   0 |      Up 0.000   Down 1.000   Left 0.000  Right 0.000
+ 22     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 23     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 24     Up   0   Down   0   Left   0  Right   1 |      Up 0.000   Down 0.000   Left 0.000  Right 1.000
+ 25     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 26     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 27     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 28     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 29     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 30     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 31     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 32     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 33     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 34     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 35     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 36     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 37     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 38     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 39     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 40     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 41     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 42     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 43     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 44     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 45     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 46     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 47     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 48     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 49     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 50     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 51     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 52     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 53     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 54     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 55     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 56     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 57     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 58     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 59     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 60     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 61     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 62     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 63     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 64     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 65     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 66     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 67     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 68     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 69     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 70     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 71     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 72     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 73     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 74     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 75     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 76     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 77     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 78     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 79     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 80     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 81     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 82     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 83     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 84     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 85     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 86     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 87     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 88     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 89     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 90     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 91     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 92     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 93     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 94     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 95     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 96     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 97     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 98     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+ 99     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+100     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+101     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+102     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+103     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+104     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+105     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+106     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+107     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+108     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+109     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+110     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+111     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+112     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+113     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+114     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+115     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+116     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+117     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+118     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+119     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+120     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+121     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+122     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+123     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+124     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+125     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+126     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+127     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+128     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+129     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+130     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+131     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+132     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+133     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+134     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+135     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+136     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+137     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+138     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+139     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+140     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+141     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+142     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+143     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+144     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+145     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+146     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+147     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+148     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+149     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+150     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+151     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+152     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+153     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+154     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+155     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+156     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+157     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+158     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+159     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+160     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+161     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+162     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+163     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+164     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+165     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+166     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+167     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+168     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+169     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+170     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+171     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+172     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+173     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+174     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+175     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+176     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+177     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+178     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
+179     Up   0   Down   0   Left   0  Right   0 |      Up 0.000   Down 0.000   Left 0.000  Right 0.000
