@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tower Defence AI", "Tower Defence AI.csproj", "{F8E2A507-468A-BEB9-0149-78198BA19083}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tower Defence AI.Editor", "Tower Defence AI.Editor.csproj", "{7B36F668-2A6C-97AF-3EFF-4EA36F49F9CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F8E2A507-468A-BEB9-0149-78198BA19083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E2A507-468A-BEB9-0149-78198BA19083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E2A507-468A-BEB9-0149-78198BA19083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E2A507-468A-BEB9-0149-78198BA19083}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B36F668-2A6C-97AF-3EFF-4EA36F49F9CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B36F668-2A6C-97AF-3EFF-4EA36F49F9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B36F668-2A6C-97AF-3EFF-4EA36F49F9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B36F668-2A6C-97AF-3EFF-4EA36F49F9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
