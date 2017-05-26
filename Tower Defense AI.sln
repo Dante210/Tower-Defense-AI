@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tower Defense AI", "Tower Defense AI.csproj", "{5692FC5B-2601-3AA8-ED96-6CC4D4381D9C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tower Defense AI.Editor", "Tower Defense AI.Editor.csproj", "{028FFB6D-4E18-43EC-4774-23885B028AAE}"

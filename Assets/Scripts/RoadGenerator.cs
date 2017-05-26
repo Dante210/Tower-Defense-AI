@@ -68,12 +68,12 @@ namespace Assets.Scripts
             return generatedRoadTiles;
         }
 
-        static RoadTile next(IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
+        static IPoint next(IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
             IEnumerable<Func<IPoint, bool>> conditions){
             var leads = currentInfo.values.OrderByDescending(pair => pair.Value);
             foreach (var lead in leads){
                 var nextPoint = getNextPoint(lead.Key, current);
-                if (nextPoint.checkPoint(conditions)) return new RoadTile(nextPoint);
+                if (nextPoint.checkPoint(conditions)) return nextPoint;
             }
             throw new Exception("Couldn't create next road tile");
         }

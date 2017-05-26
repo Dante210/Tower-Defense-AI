@@ -33,15 +33,21 @@ public class LevelManager : MonoBehaviour
     }
 
     void Update(){
-        if (Input.GetKeyDown(KeyCode.Space)){
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            drawingRoad = true;
             var data = new DataSaveLoad(Length * Width);
-            saveAndClearRoad(data);
+            if(roadTiles.Any())
+                saveAndClearRoad(data);
         }
         if (Input.GetKeyDown(KeyCode.Return)){
-            var data = new DataSaveLoad(Length * Width);
-            saveAndClearRoad(data);
             drawingRoad = false;
-            var roadGenerator = new RoadGenerator(0, Length, 0, Width);
+
+            var data = new DataSaveLoad(Length * Width);
+            roadTiles.destroy(tile => tile.gameObject);
+            roadTiles.Clear();
+
+            var roadGenerator = new RoadGenerator(0, Length - 1, 0, Width - 1);
             roadTiles = roadGenerator.generateRoad(RoadTile, transform.position, x => x == Length - 1,
                 data.roadsInfo, roadPath);
         }
