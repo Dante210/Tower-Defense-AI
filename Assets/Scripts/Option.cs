@@ -2,11 +2,14 @@
 using Assets.Scripts.Opt;
 namespace Assets.Scripts
 {
+    public struct Unit
+    {
+    }
 
     public static class Option
     {
-        public static Option<A> some<A>(A value) => new Opt.Some<A>(value);
-        public static Opt.None none () => Opt.None.Default;
+        public static Option<A> some<A>(A value) { return new Some<A>(value); }
+        public static None none() { return None.Default; }
     }
 
     public struct Option<A> : IEquatable<None>, IEquatable<Option<A>>
@@ -16,20 +19,26 @@ namespace Assets.Scripts
         bool isNone => !isSome;
 
         Option(A value) {
-            this.isSome = true;
+            isSome = true;
             this.value = value;
         }
 
-        public bool Equals(None _) => isNone;
-        public bool Equals(Option<A> other) => isSome == other.isSome && (isNone || value.Equals(other.value));
+        public bool Equals(None _) { return isNone; }
 
-        public static implicit operator Option<A>(Opt.Some<A> some) => new Option<A>(some.value);
-        public static implicit operator Option<A>(Opt.None _) => new Option<A>(); 
-        public R match<R>(Func<R> none, Func<A, R> some) => isSome ? some(value) : none();
-        public void match(Action none, Action<A> some) {
-            if (isSome) some(value);
+        public bool Equals(Option<A> other) { return isSome == other.isSome && (isNone || value.Equals(other.value)); }
+
+        public static implicit operator Option<A>(Some<A> some) { return new Option<A>(some.value); }
+
+        public static implicit operator Option<A>(None _) { return new Option<A>(); }
+
+        public R match<R>(Func<R> none, Func<A, R> some) { return isSome ? some(value) : none(); }
+
+        public R fold<R>(Action none, Func<A, R> some) {
+            if (isSome) return some(value);
             else none();
+            throw new ArgumentException();
         }
+
     }
 
     namespace Opt

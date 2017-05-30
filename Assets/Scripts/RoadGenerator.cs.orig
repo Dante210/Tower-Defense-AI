@@ -11,11 +11,14 @@ namespace Assets.Scripts
         public RoadGenerator(Point min, Point max) {
             this.min = min;
             this.max = max;
-
+            var random = new Random();
+            var randomY = random.Next(min.y, max.y);
+            startPoint = new Point(min.x, randomY);
             generatedRoadTiles = new List<RoadTile>();
             setConditions();
         }
 
+        public Point startPoint { get; }
         public List<RoadTile> generatedRoadTiles { get; }
         List<Func<IPoint, bool>> conditions { get; set; }
         Point min { get; }
@@ -48,31 +51,23 @@ namespace Assets.Scripts
             GameObject prefab, Vector3 startPos, Func<int, bool> finish,
             List<RoadInfo> roadInfos, Dictionary<string, Func<RoadTile, IPoint, bool>> roadPath) {
             var indexInSequence = 0;
-            var startPoint = getRandomStartPoint();
-            var currentTile = TileFactory.makeRoadTile(prefab, startPos, startPoint);
-            generatedRoadTiles.Add(currentTile);
+            var roadTile = TileFactory.makeRoadTile(prefab, startPos, startPoint);
+            generatedRoadTiles.Add(roadTile);
+            var currentTile = roadTile;
             while (!finish(currentTile.x)) {
                 var nextTile = next(currentTile, roadInfos[indexInSequence++], getNextPoint, conditions);
-                var somePoint = nextTile.fold(
-                    //If next tile is none let's reset everything and start from start with different startPoint
+                nextTile.match(
                     () => {
-                        generatedRoadTiles.Clear();
-                        generateRoad(prefab, startPos, finish, roadInfos, roadPath);
-                    },
-                    point => point);
-                var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(somePoint));
-                generatedRoadTiles.Add(generatedTile);
-                currentTile.setRoadDirection(new Point(generatedTile), roadPath);
-                currentTile = generatedTile;
+
+                    }, point => {
+                        var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(point.x, point.y));
+                        generatedRoadTiles.Add(generatedTile);
+                        currentTile.setRoadDirection(new Point(generatedTile.x, generatedTile.y), roadPath);
+                        currentTile = generatedTile;
+                    });
+                
             }
             return generatedRoadTiles;
-        }
-
-        Point getRandomStartPoint() {
-            var random = new Random();
-            var randomY = random.Next(min.y, max.y);
-            var startPoint = new Point(min.x, randomY);
-            return startPoint;
         }
 
         static Option<IPoint> next(

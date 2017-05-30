@@ -94,6 +94,7 @@
     <Compile Include="Assets\Scripts\DataSaveLoad.cs" />
     <Compile Include="Assets\Scripts\Extensions.cs" />
     <Compile Include="Assets\Scripts\LevelManager.cs" />
+    <Compile Include="Assets\Scripts\Option.cs" />
     <Compile Include="Assets\Scripts\Point.cs" />
     <Compile Include="Assets\Scripts\RoadGenerator.cs" />
     <Compile Include="Assets\Scripts\RoadTile.cs" />

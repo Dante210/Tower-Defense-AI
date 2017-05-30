@@ -7,6 +7,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public int Length, Width;
+    Point min, max;
     [SerializeField] GameObject BackgroundTile;
     [SerializeField] bool drawingRoad = true;
 
@@ -26,6 +27,8 @@ public class LevelManager : MonoBehaviour
     //    Dictionary<Point, TileScript> towers = new Dictionary<Point, TileScript>();
 
     void Awake(){
+        min = new Point(0, 0);
+        max = new Point(Length-1, Width-1);
     }
 
     void Start(){
@@ -47,8 +50,8 @@ public class LevelManager : MonoBehaviour
             roadTiles.destroy(tile => tile.gameObject);
             roadTiles.Clear();
 
-            var roadGenerator = new RoadGenerator(0, Length - 1, 0, Width - 1);
-            roadTiles = roadGenerator.generateRoad(RoadTile, transform.position, x => x == Length - 1,
+            var roadGenerator = new RoadGenerator(min, max);
+            roadTiles = roadGenerator.generateRoad(RoadTile, transform.position, x => x == max.x,
                 data.roadsInfo, roadPath);
         }
     }

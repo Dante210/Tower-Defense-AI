@@ -14,6 +14,11 @@
             this.y = y;
         }
 
+        public Point(IPoint point) {
+            this.x = point.x;
+            this.y = point.y;
+        }
+
         public int x{ get; }
         public int y{ get; }
     }
