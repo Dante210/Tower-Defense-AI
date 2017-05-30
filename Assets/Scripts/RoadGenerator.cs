@@ -8,29 +8,24 @@ namespace Assets.Scripts
 {
     public class RoadGenerator
     {
-        public RoadGenerator(int minX, int maxX, int minY, int maxY){
-            this.minX = minX;
-            this.maxX = maxX;
-            this.minY = minY;
-            this.maxY = maxY;
-
+        public RoadGenerator(Point min, Point max) {
+            this.min = min;
+            this.max = max;
             var random = new Random();
-            var y = random.Next(minY, maxY);
-            startPoint = new Point(minX, y);
+            var randomY = random.Next(min.y, max.y);
+            startPoint = new Point(min.x, randomY);
             generatedRoadTiles = new List<RoadTile>();
             setConditions();
         }
 
-        public Point startPoint{ get; }
-        public List<RoadTile> generatedRoadTiles{ get; }
-        List<Func<IPoint, bool>> conditions{ get; set; }
-        int minY{ get; }
-        int maxY{ get; }
-        int minX{ get; }
-        int maxX{ get; }
+        public Point startPoint { get; }
+        public List<RoadTile> generatedRoadTiles { get; }
+        List<Func<IPoint, bool>> conditions { get; set; }
+        Point min { get; }
+        Point max { get; }
 
         Func<string, IPoint, IPoint> getNextPoint => (direction, point) => {
-            switch (direction){
+            switch (direction) {
                 case "Up":
                     return new Point(point.x, point.y + 1);
                 case "Down":
@@ -44,21 +39,22 @@ namespace Assets.Scripts
             }
         };
 
-        void setConditions(){
-            conditions = new List<Func<IPoint, bool>>{
+        void setConditions() {
+            conditions = new List<Func<IPoint, bool>> {
                 point => !generatedRoadTiles.containsPoint(point),
-                point => point.x >= minX && point.x <= maxX,
-                point => point.y >= minY && point.y <= maxY
+                point => point.x >= min.x && point.x <= max.x,
+                point => point.y >= min.y && point.y <= max.y
             };
         }
 
-        public List<RoadTile> generateRoad(GameObject prefab, Vector3 startPos, Func<int, bool> finish,
-            List<RoadInfo> roadInfos, Dictionary<string, Func<RoadTile, IPoint, bool>> roadPath){
+        public List<RoadTile> generateRoad(
+            GameObject prefab, Vector3 startPos, Func<int, bool> finish,
+            List<RoadInfo> roadInfos, Dictionary<string, Func<RoadTile, IPoint, bool>> roadPath) {
             var indexInSequence = 0;
             var roadTile = TileFactory.makeRoadTile(prefab, startPos, startPoint);
             generatedRoadTiles.Add(roadTile);
             var currentTile = roadTile;
-            while (!finish(currentTile.x)){
+            while (!finish(currentTile.x)) {
                 var nextTile = next(currentTile, roadInfos[indexInSequence++], getNextPoint, conditions);
                 var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(nextTile.x, nextTile.y));
                 generatedRoadTiles.Add(generatedTile);
@@ -68,10 +64,11 @@ namespace Assets.Scripts
             return generatedRoadTiles;
         }
 
-        static IPoint next(IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
-            IEnumerable<Func<IPoint, bool>> conditions){
+        static IPoint next(
+            IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
+            IEnumerable<Func<IPoint, bool>> conditions) {
             var leads = currentInfo.values.OrderByDescending(pair => pair.Value);
-            foreach (var lead in leads){
+            foreach (var lead in leads) {
                 var nextPoint = getNextPoint(lead.Key, current);
                 if (nextPoint.checkPoint(conditions)) return nextPoint;
             }
