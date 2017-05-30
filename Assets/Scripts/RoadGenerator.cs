@@ -8,7 +8,7 @@ namespace Assets.Scripts
 {
     public class RoadGenerator
     {
-        public RoadGenerator(int minX, int maxX, int minY, int maxY){
+        public RoadGenerator(int minX, int maxX, int minY, int maxY) {
             this.minX = minX;
             this.maxX = maxX;
             this.minY = minY;
@@ -21,16 +21,16 @@ namespace Assets.Scripts
             setConditions();
         }
 
-        public Point startPoint{ get; }
-        public List<RoadTile> generatedRoadTiles{ get; }
-        List<Func<IPoint, bool>> conditions{ get; set; }
-        int minY{ get; }
-        int maxY{ get; }
-        int minX{ get; }
-        int maxX{ get; }
+        public Point startPoint { get; }
+        public List<RoadTile> generatedRoadTiles { get; }
+        List<Func<IPoint, bool>> conditions { get; set; }
+        int minY { get; }
+        int maxY { get; }
+        int minX { get; }
+        int maxX { get; }
 
         Func<string, IPoint, IPoint> getNextPoint => (direction, point) => {
-            switch (direction){
+            switch (direction) {
                 case "Up":
                     return new Point(point.x, point.y + 1);
                 case "Down":
@@ -44,38 +44,46 @@ namespace Assets.Scripts
             }
         };
 
-        void setConditions(){
-            conditions = new List<Func<IPoint, bool>>{
+        void setConditions() {
+            conditions = new List<Func<IPoint, bool>> {
                 point => !generatedRoadTiles.containsPoint(point),
                 point => point.x >= minX && point.x <= maxX,
                 point => point.y >= minY && point.y <= maxY
             };
         }
 
-        public List<RoadTile> generateRoad(GameObject prefab, Vector3 startPos, Func<int, bool> finish,
-            List<RoadInfo> roadInfos, Dictionary<string, Func<RoadTile, IPoint, bool>> roadPath){
+        public List<RoadTile> generateRoad(
+            GameObject prefab, Vector3 startPos, Func<int, bool> finish,
+            List<RoadInfo> roadInfos, Dictionary<string, Func<RoadTile, IPoint, bool>> roadPath) {
             var indexInSequence = 0;
             var roadTile = TileFactory.makeRoadTile(prefab, startPos, startPoint);
             generatedRoadTiles.Add(roadTile);
             var currentTile = roadTile;
-            while (!finish(currentTile.x)){
+            while (!finish(currentTile.x)) {
                 var nextTile = next(currentTile, roadInfos[indexInSequence++], getNextPoint, conditions);
-                var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(nextTile.x, nextTile.y));
-                generatedRoadTiles.Add(generatedTile);
-                currentTile.setRoadDirection(new Point(generatedTile.x, generatedTile.y), roadPath);
-                currentTile = generatedTile;
+                nextTile.match(
+                    () => {
+
+                    }, point => {
+                        var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(point.x, point.y));
+                        generatedRoadTiles.Add(generatedTile);
+                        currentTile.setRoadDirection(new Point(generatedTile.x, generatedTile.y), roadPath);
+                        currentTile = generatedTile;
+                    });
+                
             }
             return generatedRoadTiles;
         }
 
-        static IPoint next(IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
-            IEnumerable<Func<IPoint, bool>> conditions){
+        static Option<IPoint> next(
+            IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
+            IEnumerable<Func<IPoint, bool>> conditions) {
             var leads = currentInfo.values.OrderByDescending(pair => pair.Value);
-            foreach (var lead in leads){
+            foreach (var lead in leads) {
                 var nextPoint = getNextPoint(lead.Key, current);
-                if (nextPoint.checkPoint(conditions)) return nextPoint;
+                if (nextPoint.checkPoint(conditions)) return Option.some(nextPoint);
             }
-            throw new Exception("Couldn't create next road tile");
+            return Option.none();
         }
     }
 }
