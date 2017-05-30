@@ -56,23 +56,29 @@ namespace Assets.Scripts
             var currentTile = roadTile;
             while (!finish(currentTile.x)) {
                 var nextTile = next(currentTile, roadInfos[indexInSequence++], getNextPoint, conditions);
-                var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(nextTile.x, nextTile.y));
-                generatedRoadTiles.Add(generatedTile);
-                currentTile.setRoadDirection(new Point(generatedTile.x, generatedTile.y), roadPath);
-                currentTile = generatedTile;
+                nextTile.match(
+                    () => {
+
+                    }, point => {
+                        var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(point.x, point.y));
+                        generatedRoadTiles.Add(generatedTile);
+                        currentTile.setRoadDirection(new Point(generatedTile.x, generatedTile.y), roadPath);
+                        currentTile = generatedTile;
+                    });
+                
             }
             return generatedRoadTiles;
         }
 
-        static IPoint next(
+        static Option<IPoint> next(
             IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
             IEnumerable<Func<IPoint, bool>> conditions) {
             var leads = currentInfo.values.OrderByDescending(pair => pair.Value);
             foreach (var lead in leads) {
                 var nextPoint = getNextPoint(lead.Key, current);
-                if (nextPoint.checkPoint(conditions)) return nextPoint;
+                if (nextPoint.checkPoint(conditions)) return Option.some(nextPoint);
             }
-            throw new Exception("Couldn't create next road tile");
+            return Option.none();
         }
     }
 }
