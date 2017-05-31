@@ -13,23 +13,23 @@ namespace Assets.Scripts
         public static readonly string TOWERS_INFO_PATH = Application.dataPath + "/RoadsInfo.txt";
         readonly int maxElementCount;
 
-        public DataSaveLoad(int maxElementCount){
+        public DataSaveLoad(int maxElementCount) {
             this.maxElementCount = maxElementCount;
-            if (!File.Exists(ROADS_DATA_PATH)){
+            if (!File.Exists(ROADS_DATA_PATH)) {
                 initialSetupRoadInfo();
             }
-            else{
+            else {
                 roadsInfo = roadsInfo.load(ROADS_DATA_PATH);
                 if (!File.Exists(ROADS_INFO_PATH))
                     roadsInfo.writeToFile(ROADS_INFO_PATH, info => info.ToString());
             }
         }
 
-        public List<RoadInfo> roadsInfo{ get; private set; }
+        public List<RoadInfo> roadsInfo { get; private set; }
 
-        public void updateRoadsData(List<RoadTile> roadTiles){
+        public void updateRoadsData(List<RoadTile> roadTiles) {
             var counter = 0;
-            foreach (var roadTile in roadTiles){
+            foreach (var roadTile in roadTiles) {
                 roadsInfo[counter].increaseCount(roadTile.getLeadKey());
                 roadsInfo[counter++].updateValues();
             }
@@ -38,7 +38,7 @@ namespace Assets.Scripts
         }
 
 
-        void initialSetupRoadInfo(){
+        void initialSetupRoadInfo() {
             roadsInfo = new List<RoadInfo>(maxElementCount);
             for (var i = 0; i < maxElementCount; i++) roadsInfo.Add(new RoadInfo(i));
             roadsInfo.writeToFile(ROADS_INFO_PATH, info => info.ToString());
@@ -51,17 +51,17 @@ namespace Assets.Scripts
     {
         readonly Dictionary<string, int> counts;
 
-        public RoadInfo(int indexInSequence){
+        public RoadInfo(int indexInSequence) {
             this.indexInSequence = indexInSequence;
 
-            values = new Dictionary<string, double>{
+            values = new Dictionary<string, double> {
                 ["Up"] = 0,
                 ["Down"] = 0,
                 ["Left"] = 0,
                 ["Right"] = 0
             };
 
-            counts = new Dictionary<string, int>{
+            counts = new Dictionary<string, int> {
                 ["Up"] = 0,
                 ["Down"] = 0,
                 ["Left"] = 0,
@@ -69,20 +69,18 @@ namespace Assets.Scripts
             };
         }
 
-        public Dictionary<string, double> values{ get; private set; }
+        public Dictionary<string, double> values { get; private set; }
 
-        int indexInSequence{ get; }
+        int indexInSequence { get; }
 
-        public void increaseCount(string key){
+        public void increaseCount(string key) {
             if (key != null)
                 counts[key]++;
         }
 
-        public void updateValues(){
-            values = counts.calculateValues(values);
-        }
+        public void updateValues() { values = counts.calculateValues(values); }
 
-        public override string ToString(){
+        public override string ToString() {
             var builder = new StringBuilder();
             builder.Append($"{indexInSequence,3}");
             foreach (var count in counts) builder.Append($"{count.Key,7} {count.Value,3}");

@@ -27,7 +27,6 @@ namespace Assets.Scripts
             };
         }
 
-        //By default next road point will be to the right
         public Dictionary<string, bool> leadsTo{ get; set; }
 
         public int x{ get; private set; }

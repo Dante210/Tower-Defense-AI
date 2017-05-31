@@ -60,12 +60,32 @@ namespace Assets.Scripts
                 Object.Destroy(func(i));
         }
 
-        public static bool containsPoint(this IEnumerable<RoadTile> @this, IPoint point){
+        public static bool containsPoint<A>(this IEnumerable<A> @this, IPoint point) where A : IPoint{
             return @this.Any(roadTile => roadTile.x == point.x && roadTile.y == point.y);
         }
 
         public static bool checkPoint(this IPoint @this, IEnumerable<Func<IPoint, bool>> predicates){
             return predicates.All(predicate => predicate(@this));
+        }
+
+        public static IPoint getPointOffset(this IPoint @this, int x, int y) {
+            return new Point(@this.x + x, @this.y + y);
+        }
+
+        public static IPoint getNextPoint (this IPoint @this, string direction) { 
+            switch (direction)
+            {
+                case "Up":
+                    return new Point(@this.x, @this.y + 1);
+                case "Down":
+                    return new Point(@this.x, @this.y - 1);
+                case "Left":
+                    return new Point(@this.x - 1, @this.y);
+                case "Right":
+                    return new Point(@this.x + 1, @this.y);
+                default:
+                    return @this;
+            }
         }
     }
 }

@@ -21,20 +21,6 @@ namespace Assets.Scripts
         Point min { get; }
         Point max { get; }
 
-        Func<string, IPoint, IPoint> getNextPoint => (direction, point) => {
-            switch (direction) {
-                case "Up":
-                    return new Point(point.x, point.y + 1);
-                case "Down":
-                    return new Point(point.x, point.y - 1);
-                case "Left":
-                    return new Point(point.x - 1, point.y);
-                case "Right":
-                    return new Point(point.x + 1, point.y);
-                default:
-                    return point;
-            }
-        };
 
         void setConditions() {
             conditions = new List<Func<IPoint, bool>> {
@@ -52,7 +38,7 @@ namespace Assets.Scripts
             var currentTile = TileFactory.makeRoadTile(prefab, startPos, startPoint);
             generatedRoadTiles.Add(currentTile);
             while (!finish(currentTile.x)) {
-                var nextTile = next(currentTile, roadInfos[indexInSequence++], getNextPoint, conditions);
+                var nextTile = next(currentTile, roadInfos[indexInSequence++], conditions);
                 var somePoint = nextTile.fold(
                     //If next tile is none let's reset everything and start from start with different startPoint
                     () => {
@@ -76,11 +62,11 @@ namespace Assets.Scripts
         }
 
         static Option<IPoint> next(
-            IPoint current, RoadInfo currentInfo, Func<string, IPoint, IPoint> getNextPoint,
+            IPoint current, RoadInfo currentInfo,
             IEnumerable<Func<IPoint, bool>> conditions) {
             var leads = currentInfo.values.OrderByDescending(pair => pair.Value);
             foreach (var lead in leads) {
-                var nextPoint = getNextPoint(lead.Key, current);
+                var nextPoint = current.getNextPoint(lead.Key);
                 if (nextPoint.checkPoint(conditions)) return Option.some(nextPoint);
             }
             return Option.none();

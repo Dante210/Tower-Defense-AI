@@ -7,6 +7,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour
 {
     public int Length, Width;
+    public int TowerCount;
     Point min, max;
     [SerializeField] GameObject BackgroundTile;
     [SerializeField] bool drawingRoad = true;
@@ -22,9 +23,9 @@ public class LevelManager : MonoBehaviour
         };
 
     [SerializeField] GameObject RoadTile;
-
+    int currentTowerCount;
     List<RoadTile> roadTiles = new List<RoadTile>();
-    //    Dictionary<Point, TileScript> towers = new Dictionary<Point, TileScript>();
+    List<TowerTile> towerTiles = new List<TowerTile>();
 
     void Awake(){
         min = new Point(0, 0);
@@ -63,22 +64,26 @@ public class LevelManager : MonoBehaviour
     }
 
     //Point calls to handle click
-    public void handleTileClick(Point point){
-        if (drawingRoad){
-            if (roadTiles.containsPoint(point)) return;
+    public void handleTileClick(IPoint point){
+        if (roadTiles.containsPoint(point) || towerTiles.containsPoint(point)) return;
 
-            if (roadTiles.Any()){
+        if (drawingRoad) {
+            if (roadTiles.Any()) {
                 var roadTileBefore = roadTiles.Last();
                 roadTileBefore.setRoadDirection(point, roadPath);
-                if (pathIsValid(roadTileBefore)){
+                if (pathIsValid(roadTileBefore)) {
                     var roadTile = TileFactory.makeRoadTile(RoadTile, transform.position, point);
                     roadTiles.Add(roadTile);
                 }
             }
-            else{
+            else {
                 var roadTile = TileFactory.makeRoadTile(RoadTile, transform.position, point);
                 roadTiles.Add(roadTile);
             }
+        }
+        else {
+            var towerTile = TileFactory.
+            towerTiles.Add();
         }
     }
 
