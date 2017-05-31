@@ -6,7 +6,7 @@ using Random = System.Random;
 
 namespace Assets.Scripts
 {
-    public class RoadGenerator
+    public class RoadGenerator : IConditions
     {
         public RoadGenerator(Point min, Point max) {
             this.min = min;
@@ -17,18 +17,10 @@ namespace Assets.Scripts
         }
 
         public List<RoadTile> generatedRoadTiles { get; }
-        List<Func<IPoint, bool>> conditions { get; set; }
-        Point min { get; }
-        Point max { get; }
 
+         Point min { get; }
+         Point max { get; }
 
-        void setConditions() {
-            conditions = new List<Func<IPoint, bool>> {
-                point => !generatedRoadTiles.containsPoint(point),
-                point => point.x >= min.x && point.x <= max.x,
-                point => point.y >= min.y && point.y <= max.y
-            };
-        }
 
         public List<RoadTile> generateRoad(
             GameObject prefab, Vector3 startPos, Func<int, bool> finish,
@@ -38,7 +30,7 @@ namespace Assets.Scripts
             var currentTile = TileFactory.makeRoadTile(prefab, startPos, startPoint);
             generatedRoadTiles.Add(currentTile);
             while (!finish(currentTile.x)) {
-                var nextTile = next(currentTile, roadInfos[indexInSequence++], conditions);
+                var nextTile = next(currentTile, roadInfos[indexInSequence++], setConditions());
                 var somePoint = nextTile.fold(
                     //If next tile is none let's reset everything and start from start with different startPoint
                     () => {
@@ -61,15 +53,25 @@ namespace Assets.Scripts
             return startPoint;
         }
 
-        static Option<IPoint> next(
+        static Option<Point> next(
             IPoint current, RoadInfo currentInfo,
             IEnumerable<Func<IPoint, bool>> conditions) {
             var leads = currentInfo.values.OrderByDescending(pair => pair.Value);
             foreach (var lead in leads) {
                 var nextPoint = current.getNextPoint(lead.Key);
                 if (nextPoint.checkPoint(conditions)) return Option.some(nextPoint);
+                else return Option.none();
             }
-            return Option.none();
+            throw new ArgumentException();
+        }
+
+        public List<Func<IPoint, bool>> setConditions() {
+            var temp = new List<Func<IPoint, bool>> {
+                point => !generatedRoadTiles.containsPoint(point),
+                point => point.x >= min.x && point.x <= max.x,
+                point => point.y >= min.y && point.y <= max.y
+            };
+            return temp;
         }
     }
 }

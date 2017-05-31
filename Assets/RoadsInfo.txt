@@ -1,180 +1,180 @@
-  0     Up   1   Down   0   Left   0  Right  10     Up 0.091   Down 0.000   Left 0.000  Right 0.909
-  1     Up   2   Down   1   Left   0  Right   8     Up 0.182   Down 0.091   Left 0.000  Right 0.727
-  2     Up   2   Down   1   Left   1  Right   7     Up 0.182   Down 0.091   Left 0.091  Right 0.636
-  3     Up   3   Down   1   Left   1  Right   6     Up 0.273   Down 0.091   Left 0.091  Right 0.545
-  4     Up   6   Down   1   Left   0  Right   4     Up 0.545   Down 0.091   Left 0.000  Right 0.364
-  5     Up   2   Down   1   Left   0  Right   8     Up 0.182   Down 0.091   Left 0.000  Right 0.727
-  6     Up   3   Down   0   Left   0  Right   8     Up 0.273   Down 0.000   Left 0.000  Right 0.727
-  7     Up   0   Down   0   Left   1  Right  10     Up 0.000   Down 0.000   Left 0.091  Right 0.909
-  8     Up   0   Down   0   Left   1  Right  10     Up 0.000   Down 0.000   Left 0.091  Right 0.909
-  9     Up   2   Down   0   Left   0  Right   9     Up 0.182   Down 0.000   Left 0.000  Right 0.818
- 10     Up   2   Down   1   Left   0  Right   8     Up 0.182   Down 0.091   Left 0.000  Right 0.727
- 11     Up   1   Down   0   Left   0  Right  10     Up 0.091   Down 0.000   Left 0.000  Right 0.909
- 12     Up   1   Down   0   Left   0  Right  10     Up 0.091   Down 0.000   Left 0.000  Right 0.909
- 13     Up   0   Down   0   Left   0  Right  11     Up 0.000   Down 0.000   Left 0.000  Right 1.000
- 14     Up   0   Down   1   Left   0  Right  10     Up 0.000   Down 0.091   Left 0.000  Right 0.909
- 15     Up   0   Down   4   Left   0  Right   7     Up 0.000   Down 0.364   Left 0.000  Right 0.636
- 16     Up   0   Down   4   Left   0  Right   7     Up 0.000   Down 0.364   Left 0.000  Right 0.636
- 17     Up   0   Down   3   Left   0  Right   5     Up 0.000   Down 0.375   Left 0.000  Right 0.625
- 18     Up   0   Down   2   Left   0  Right   5     Up 0.000   Down 0.286   Left 0.000  Right 0.714
- 19     Up   0   Down   0   Left   0  Right   6     Up 0.000   Down 0.000   Left 0.000  Right 1.000
- 20     Up   1   Down   0   Left   0  Right   5     Up 0.167   Down 0.000   Left 0.000  Right 0.833
- 21     Up   1   Down   0   Left   0  Right   4     Up 0.200   Down 0.000   Left 0.000  Right 0.800
- 22     Up   1   Down   0   Left   0  Right   4     Up 0.200   Down 0.000   Left 0.000  Right 0.800
- 23     Up   1   Down   0   Left   0  Right   4     Up 0.200   Down 0.000   Left 0.000  Right 0.800
- 24     Up   0   Down   0   Left   0  Right   5     Up 0.000   Down 0.000   Left 0.000  Right 1.000
- 25     Up   1   Down   0   Left   0  Right   2     Up 0.333   Down 0.000   Left 0.000  Right 0.667
- 26     Up   1   Down   0   Left   0  Right   1     Up 0.500   Down 0.000   Left 0.000  Right 0.500
- 27     Up   1   Down   0   Left   0  Right   1     Up 0.500   Down 0.000   Left 0.000  Right 0.500
- 28     Up   0   Down   0   Left   0  Right   2     Up 0.000   Down 0.000   Left 0.000  Right 1.000
- 29     Up   0   Down   0   Left   0  Right   1     Up 0.000   Down 0.000   Left 0.000  Right 1.000
- 30     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 31     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 32     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 33     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 34     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 35     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 36     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 37     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 38     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 39     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 40     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 41     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 42     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 43     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 44     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 45     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 46     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 47     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 48     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 49     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 50     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 51     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 52     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 53     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 54     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 55     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 56     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 57     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 58     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 59     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 60     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 61     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 62     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 63     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 64     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 65     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 66     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 67     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 68     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 69     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 70     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 71     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 72     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 73     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 74     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 75     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 76     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 77     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 78     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 79     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 80     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 81     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 82     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 83     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 84     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 85     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 86     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 87     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 88     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 89     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 90     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 91     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 92     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 93     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 94     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 95     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 96     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 97     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 98     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
- 99     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-100     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-101     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-102     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-103     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-104     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-105     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-106     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-107     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-108     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-109     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-110     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-111     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-112     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-113     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-114     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-115     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-116     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-117     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-118     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-119     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-120     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-121     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-122     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-123     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-124     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-125     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-126     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-127     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-128     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-129     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-130     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-131     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-132     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-133     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-134     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-135     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-136     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-137     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-138     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-139     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-140     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-141     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-142     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-143     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-144     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-145     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-146     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-147     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-148     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-149     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-150     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-151     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-152     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-153     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-154     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-155     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-156     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-157     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-158     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-159     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-160     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-161     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-162     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-163     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-164     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-165     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-166     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-167     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-168     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-169     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-170     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-171     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-172     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-173     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-174     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-175     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-176     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-177     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-178     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
-179     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+0     0     Up   0   Down   0   Left   0  Right   7     Up 0.000   Down 0.000   Left 0.000  Right 1.000
+1     1     Up   1   Down   0   Left   0  Right   6     Up 0.143   Down 0.000   Left 0.000  Right 0.857
+2     2     Up   5   Down   1   Left   0  Right   1     Up 0.714   Down 0.143   Left 0.000  Right 0.143
+3     3     Up   4   Down   1   Left   0  Right   2     Up 0.571   Down 0.143   Left 0.000  Right 0.286
+4     4     Up   1   Down   0   Left   0  Right   6     Up 0.143   Down 0.000   Left 0.000  Right 0.857
+5     5     Up   1   Down   0   Left   0  Right   6     Up 0.143   Down 0.000   Left 0.000  Right 0.857
+6     6     Up   0   Down   0   Left   0  Right   7     Up 0.000   Down 0.000   Left 0.000  Right 1.000
+7     7     Up   0   Down   2   Left   0  Right   5     Up 0.000   Down 0.286   Left 0.000  Right 0.714
+8     8     Up   0   Down   2   Left   0  Right   5     Up 0.000   Down 0.286   Left 0.000  Right 0.714
+9     9     Up   0   Down   6   Left   0  Right   1     Up 0.000   Down 0.857   Left 0.000  Right 0.143
+10   10     Up   0   Down   2   Left   0  Right   5     Up 0.000   Down 0.286   Left 0.000  Right 0.714
+11   11     Up   0   Down   0   Left   0  Right   7     Up 0.000   Down 0.000   Left 0.000  Right 1.000
+12   12     Up   1   Down   0   Left   0  Right   6     Up 0.143   Down 0.000   Left 0.000  Right 0.857
+13   13     Up   1   Down   0   Left   0  Right   6     Up 0.143   Down 0.000   Left 0.000  Right 0.857
+14   14     Up   3   Down   1   Left   0  Right   3     Up 0.429   Down 0.143   Left 0.000  Right 0.429
+15   15     Up   3   Down   1   Left   0  Right   3     Up 0.429   Down 0.143   Left 0.000  Right 0.429
+16   16     Up   2   Down   1   Left   0  Right   4     Up 0.286   Down 0.143   Left 0.000  Right 0.571
+17   17     Up   2   Down   0   Left   0  Right   5     Up 0.286   Down 0.000   Left 0.000  Right 0.714
+18   18     Up   1   Down   0   Left   0  Right   6     Up 0.143   Down 0.000   Left 0.000  Right 0.857
+19   19     Up   0   Down   1   Left   0  Right   6     Up 0.000   Down 0.143   Left 0.000  Right 0.857
+20   20     Up   0   Down   1   Left   0  Right   6     Up 0.000   Down 0.143   Left 0.000  Right 0.857
+21   21     Up   0   Down   2   Left   0  Right   3     Up 0.000   Down 0.400   Left 0.000  Right 0.600
+22   22     Up   0   Down   2   Left   0  Right   3     Up 0.000   Down 0.400   Left 0.000  Right 0.600
+23   23     Up   0   Down   1   Left   0  Right   3     Up 0.000   Down 0.250   Left 0.000  Right 0.750
+24   24     Up   0   Down   2   Left   0  Right   1     Up 0.000   Down 0.667   Left 0.000  Right 0.333
+25   25     Up   0   Down   0   Left   0  Right   3     Up 0.000   Down 0.000   Left 0.000  Right 1.000
+26   26     Up   0   Down   0   Left   0  Right   1     Up 0.000   Down 0.000   Left 0.000  Right 1.000
+27   27     Up   0   Down   0   Left   0  Right   1     Up 0.000   Down 0.000   Left 0.000  Right 1.000
+28   28     Up   1   Down   0   Left   0  Right   0     Up 1.000   Down 0.000   Left 0.000  Right 0.000
+29   29     Up   1   Down   0   Left   0  Right   0     Up 1.000   Down 0.000   Left 0.000  Right 0.000
+30   30     Up   0   Down   0   Left   0  Right   1     Up 0.000   Down 0.000   Left 0.000  Right 1.000
+31   31     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+32   32     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+33   33     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+34   34     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+35   35     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+36   36     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+37   37     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+38   38     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+39   39     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+40   40     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+41   41     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+42   42     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+43   43     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+44   44     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+45   45     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+46   46     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+47   47     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+48   48     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+49   49     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+50   50     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+51   51     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+52   52     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+53   53     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+54   54     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+55   55     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+56   56     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+57   57     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+58   58     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+59   59     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+60   60     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+61   61     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+62   62     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+63   63     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+64   64     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+65   65     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+66   66     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+67   67     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+68   68     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+69   69     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+70   70     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+71   71     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+72   72     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+73   73     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+74   74     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+75   75     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+76   76     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+77   77     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+78   78     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+79   79     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+80   80     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+81   81     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+82   82     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+83   83     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+84   84     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+85   85     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+86   86     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+87   87     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+88   88     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+89   89     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+90   90     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+91   91     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+92   92     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+93   93     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+94   94     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+95   95     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+96   96     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+97   97     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+98   98     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+99   99     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+100 100     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+101 101     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+102 102     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+103 103     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+104 104     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+105 105     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+106 106     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+107 107     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+108 108     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+109 109     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+110 110     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+111 111     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+112 112     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+113 113     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+114 114     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+115 115     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+116 116     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+117 117     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+118 118     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+119 119     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+120 120     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+121 121     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+122 122     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+123 123     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+124 124     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+125 125     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+126 126     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+127 127     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+128 128     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+129 129     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+130 130     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+131 131     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+132 132     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+133 133     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+134 134     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+135 135     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+136 136     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+137 137     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+138 138     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+139 139     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+140 140     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+141 141     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+142 142     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+143 143     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+144 144     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+145 145     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+146 146     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+147 147     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+148 148     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+149 149     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+150 150     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+151 151     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+152 152     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+153 153     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+154 154     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+155 155     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+156 156     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+157 157     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+158 158     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+159 159     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+160 160     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+161 161     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+162 162     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+163 163     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+164 164     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+165 165     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+166 166     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+167 167     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+168 168     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+169 169     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+170 170     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+171 171     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+172 172     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+173 173     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+174 174     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+175 175     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+176 176     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+177 177     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+178 178     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000
+179 179     Up   0   Down   0   Left   0  Right   0     Up 0.000   Down 0.000   Left 0.000  Right 0.000

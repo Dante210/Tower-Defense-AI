@@ -99,11 +99,15 @@
     <Compile Include="Assets\Scripts\RoadGenerator.cs" />
     <Compile Include="Assets\Scripts\RoadTile.cs" />
     <Compile Include="Assets\Scripts\TileScript.cs" />
+    <Compile Include="Assets\Scripts\TowerData.cs" />
+    <Compile Include="Assets\Scripts\TowerGenerator.cs" />
+    <Compile Include="Assets\Scripts\TowerTile.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\CSharp vNext Support\AsyncTools\Plugins\AsyncBridge.Net35.xml" />
     <None Include="Assets\CSharp vNext Support\AsyncTools\Plugins\System.Threading.xml" />
     <None Include="Assets\RoadsInfo.txt" />
+    <None Include="Assets\TowersInfo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

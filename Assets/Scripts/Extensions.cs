@@ -30,9 +30,12 @@ namespace Assets.Scripts
         }
 
         public static void writeToFile<A>(this IEnumerable<A> source, [NotNull] string path, Func<A, string> func){
-            using (var writer = new StreamWriter(path)){
-                foreach (var item in source)
+            using (var writer = new StreamWriter(path)) {
+                var i = 0;
+                foreach (var item in source) {
+                    writer.Write($"{i++,-3} ");
                     writer.WriteLine(func(item));
+                }
             }
         }
 
@@ -72,7 +75,7 @@ namespace Assets.Scripts
             return new Point(@this.x + x, @this.y + y);
         }
 
-        public static IPoint getNextPoint (this IPoint @this, string direction) { 
+        public static Point getNextPoint<A> (this A @this, string direction) where A: IPoint{ 
             switch (direction)
             {
                 case "Up":
@@ -84,7 +87,7 @@ namespace Assets.Scripts
                 case "Right":
                     return new Point(@this.x + 1, @this.y);
                 default:
-                    return @this;
+                    throw new ArgumentException();
             }
         }
     }

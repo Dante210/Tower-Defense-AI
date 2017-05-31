@@ -4,6 +4,8 @@
     {
         int x { get; }
         int y { get; }
+
+
     }
 
 

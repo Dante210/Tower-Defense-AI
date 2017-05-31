@@ -10,7 +10,6 @@ namespace Assets.Scripts
     {
         public static readonly string ROADS_INFO_PATH = Application.dataPath + "/RoadsInfo.txt";
         public static readonly string ROADS_DATA_PATH = Application.dataPath + "/RoadsDATA.dat";
-        public static readonly string TOWERS_INFO_PATH = Application.dataPath + "/RoadsInfo.txt";
         readonly int maxElementCount;
 
         public DataSaveLoad(int maxElementCount) {
