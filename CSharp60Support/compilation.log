@@ -1,54 +1,54 @@
 ********************************************************************************
-*                      Wednesday, May 31, 2017 3:04:41 PM                      *
+*                       Sunday, June 04, 2017 5:39:19 PM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
 Target assembly: Assembly-CSharp.dll
-Project directory: C:\Users\Donatas\Desktop\Unity\Tower Defense AI
+Project directory: C:\Users\Donatas\Documents\Visual Studio 2017\Projects\tower-defense-ai
 Target profile directory: C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity
 Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
 Compiler: Microsoft C# 6.0
 
 - Compilation -----------------------------------------------
 
-Process: C:\Users\Donatas\Desktop\Unity\Tower Defense AI\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-078938bc014ba364da2cb3742b1965a5 
+Process: C:\Users\Donatas\Documents\Visual Studio 2017\Projects\tower-defense-ai\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\Mono\lib\mono\unity\System.Xml.dll" @Temp/UnityTempFile-d71b9f8d96c302248879ca0f25e82371 
 Exit code: 0
-Elapsed time: 7.16 sec
+Elapsed time: 2.43 sec
 
 - Compiler output (0 lines):
 
 - Compiler errors (4 lines):
 0: Assets\Scripts\TowerData.cs(31,17): warning CS0219: The variable 'counter' is assigned but its value is never used
-1: Assets\Scripts\LevelManager.cs(22,33): warning CS0649: Field 'LevelManager.BackgroundTile' is never assigned to, and will always have its default value null
-2: Assets\Scripts\LevelManager.cs(32,33): warning CS0649: Field 'LevelManager.TowerTile' is never assigned to, and will always have its default value null
-3: Assets\Scripts\LevelManager.cs(29,33): warning CS0649: Field 'LevelManager.RoadTile' is never assigned to, and will always have its default value null
+1: Assets\Scripts\LevelManager.cs(45,33): warning CS0649: Field 'LevelManager.RoadTile' is never assigned to, and will always have its default value null
+2: Assets\Scripts\LevelManager.cs(47,33): warning CS0649: Field 'LevelManager.TowerTile' is never assigned to, and will always have its default value null
+3: Assets\Scripts\LevelManager.cs(39,33): warning CS0649: Field 'LevelManager.BackgroundTile' is never assigned to, and will always have its default value null
 
 - PDB to MDB conversion --------------------------------------
 
-Process: C:\Users\Donatas\Desktop\Unity\Tower Defense AI\CSharp60Support\Roslyn\pdb2mdb.exe
+Process: C:\Users\Donatas\Documents\Visual Studio 2017\Projects\tower-defense-ai\CSharp60Support\Roslyn\pdb2mdb.exe
 Arguments: Temp\Assembly-CSharp.dll
 Exit code: 0
-Elapsed time: 0.21 sec
+Elapsed time: 0.09 sec
 
 - pdb2mdb.exe output (0 lines):
 ********************************************************************************
-*                      Wednesday, May 31, 2017 3:04:50 PM                      *
+*                       Sunday, June 04, 2017 5:39:22 PM                       *
 ********************************************************************************
 CSharpCompilerWrapper.exe version: 2.0.3.30
 Platform: Windows
 Target assembly: Assembly-CSharp-Editor.dll
-Project directory: C:\Users\Donatas\Desktop\Unity\Tower Defense AI
+Project directory: C:\Users\Donatas\Documents\Visual Studio 2017\Projects\tower-defense-ai
 Target profile directory: C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api
 Unity 'Data' or 'Frameworks' directory: C:/Program Files/Unity/Editor/Data
 Compiler: Microsoft C# 6.0
 
 - Compilation -----------------------------------------------
 
-Process: C:\Users\Donatas\Desktop\Unity\Tower Defense AI\CSharp60Support\Roslyn\csc.exe
-Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-5536324a28b1fd645bd77e59998c83eb 
+Process: C:\Users\Donatas\Documents\Visual Studio 2017\Projects\tower-defense-ai\CSharp60Support\Roslyn\csc.exe
+Arguments: -nostdlib+ -noconfig -nologo -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Core.dll" -r:"C:\Program Files\Unity\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\System.Xml.dll" @Temp/UnityTempFile-7a57db4be0435bc43a9759520855ce8d 
 Exit code: 0
-Elapsed time: 4.30 sec
+Elapsed time: 1.88 sec
 
 - Compiler output (0 lines):
 
@@ -56,9 +56,9 @@ Elapsed time: 4.30 sec
 
 - PDB to MDB conversion --------------------------------------
 
-Process: C:\Users\Donatas\Desktop\Unity\Tower Defense AI\CSharp60Support\Roslyn\pdb2mdb.exe
+Process: C:\Users\Donatas\Documents\Visual Studio 2017\Projects\tower-defense-ai\CSharp60Support\Roslyn\pdb2mdb.exe
 Arguments: Temp\Assembly-CSharp-Editor.dll
 Exit code: 0
-Elapsed time: 0.21 sec
+Elapsed time: 0.09 sec
 
 - pdb2mdb.exe output (0 lines):

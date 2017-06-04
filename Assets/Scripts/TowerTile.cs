@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using OptionLib;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -18,36 +19,25 @@ namespace Assets.Scripts
             List<RoadTile> roadTiles, IPoint point, ICollection<Func<IPoint, bool>> conditions, int towerRange) {
             x = point.x;
             y = point.y;
-            closestRoadTile = getClosestTile(roadTiles, conditions);
+            closestRoadTile = getClosestTile(point, roadTiles, conditions).fold(
+                () => { throw new Exception("Tower cannot be generated"); }, closest => closest);
             offset = closestRoadTile.y - point.y;
             roadInRange = getRoadCountInRange(roadTiles, point, towerRange);
             closestRoadTileNum = getNumInSequence(roadTiles, closestRoadTile);
         }
 
-        IPoint getClosestTile<A>(List<A> tiles, ICollection<Func<IPoint, bool>> conditions)
+        Option<Point> getClosestTile<A>(IPoint point, List<A> tiles, ICollection<Func<IPoint, bool>> conditions)
             where A : IPoint {
-            //Go up
-            var current = new Point(x, y);
-            current = current.getNextPoint("Up");
-            while (current.checkPoint(conditions)) {
-                if (tiles.containsPoint(current))
-                    return current;
-                current = current.getNextPoint("Up");
-            }
-            //Go Down
-            current = new Point(x, y);
-            current = current.getNextPoint("Down");
-            while (current.checkPoint(conditions)) {
-                if (tiles.containsPoint(current))
-                    return current;
-                current = current.getNextPoint("Down");
-            }
-            throw new ArgumentException();
+            var up = point.closest(current => new Point(current.x, current.y + 1), tiles, conditions);
+            var down = point.closest(current => new Point(current.x, current.y - 1), tiles, conditions);
+            return up.isSome ? up : down;
         }
+
 
         int getRoadCountInRange<A>(List<A> tiles, IPoint point, int range) where A : IPoint {
             var count = 0;
-            for (var i = 1; i < range; i++) {
+            for (var i = 1; i < range; i++)
+            {
                 if (tiles.containsPoint(point.getPointOffset(-i, i)))
                     count++;
                 if (tiles.containsPoint(point.getPointOffset(i, -i)))
@@ -69,7 +59,7 @@ namespace Assets.Scripts
             return count;
         }
 
-        int getNumInSequence<A>(List<A> tiles, IPoint point) where A : IPoint {
+        int getNumInSequence<A>(IList<A> tiles, IPoint point) where A : IPoint {
             for (var i = 0; i < tiles.Count; i++)
                 if (tiles[i].x == point.x && tiles[i].y == point.y)
                     return i;

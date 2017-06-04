@@ -17,32 +17,32 @@ namespace Assets.Scripts
                 initialSetup();
             }
             else {
-                towersInfo = towersInfo.load(TOWERS_DATA_PATH);
+                info = info.load(TOWERS_DATA_PATH);
                 if (!File.Exists(TOWERS_INFO_PATH))
-                    towersInfo.writeToFile(TOWERS_INFO_PATH, info => info.ToString());
+                    info.writeToFile(TOWERS_INFO_PATH, info => info.ToString());
             }
         }
 
         public int maxElementCount { get; }
 
-        public List<TowerInfo> towersInfo { get; private set; }
+        public List<TowerInfo> info { get; private set; }
 
         public void updateData(List<TowerTile> towerTiles) {
             var counter = 0;
             for (var i = 0; i < towerTiles.Count; i++) {
-                towersInfo[towerTiles[i].closestRoadTileNum].roadTileCount++;
-                towersInfo[towerTiles[i].closestRoadTileNum].offset[towerTiles[i].offset]++;
+                info[towerTiles[i].closestRoadTileNum].roadTileCount++;
+                info[towerTiles[i].closestRoadTileNum].offset[towerTiles[i].offset]++;
             }
-            towersInfo.writeToFile(TOWERS_INFO_PATH, info => info.ToString());
-            towersInfo.save(TOWERS_DATA_PATH);
+            info.writeToFile(TOWERS_INFO_PATH, info => info.ToString());
+            info.save(TOWERS_DATA_PATH);
         }
 
 
         void initialSetup() {
-            towersInfo = new List<TowerInfo>(maxElementCount);
-            for (var i = 0; i < maxElementCount; i++) towersInfo.Add(new TowerInfo());
-            towersInfo.writeToFile(TOWERS_INFO_PATH, info => info.ToString());
-            towersInfo.save(TOWERS_DATA_PATH);
+            info = new List<TowerInfo>(maxElementCount);
+            for (var i = 0; i < maxElementCount; i++) info.Add(new TowerInfo());
+            info.writeToFile(TOWERS_INFO_PATH, info => info.ToString());
+            info.save(TOWERS_DATA_PATH);
         }
     }
 

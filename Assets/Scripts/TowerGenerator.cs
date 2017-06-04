@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using OptionLib;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -18,18 +19,23 @@ namespace Assets.Scripts
             GameObject prefab, Vector3 startPos,
             List<TowerInfo> towerInfos, List<RoadTile> roadTiles,
             ICollection<Func<IPoint, bool>> conditions, int towerRange) {
+
             var generatedTiles = new List<TowerTile>();
             var currentTowerCount = 0;
             var roadTileIndex = 0;
+
             while (currentTowerCount < towersToGenerate && roadTileIndex < roadTiles.Count) {
                 var currentRoadTile = roadTiles[roadTileIndex];
 
-                //Go up
-                var current = new Point(currentRoadTile.x, currentRoadTile.y);
-                current = current.getNextPoint("Up");
-                while (current.checkPoint(conditions)) {
+                var currentOpt = currentRoadTile.getNextPoint("Up");
+                while (currentOpt.checkPoint(conditions))
+                {
+                    var current = currentOpt.fold(
+                        () => { throw new Exception("Tower cannot be generated"); }, point => point);
+
                     var offset = current.y - currentRoadTile.y;
                     if (getProbability(towerInfos[roadTileIndex], offset, towerInfos) >= 0.4) {
+
                         Debug.Log(getProbability(towerInfos[roadTileIndex], offset, towerInfos));
 
                         var generatedTile = TileFactory.makeTowerTile(
@@ -37,24 +43,31 @@ namespace Assets.Scripts
                         generatedTiles.Add(generatedTile);
                         currentTowerCount++;
                     }
-                    current = current.getNextPoint("Up");
+                    currentOpt = current.getNextPoint("Up");
                 }
-                //Go Down
-                current = new Point(currentRoadTile.x, currentRoadTile.y);
-                current = current.getNextPoint("Down");
-                while (current.checkPoint(conditions)) {
+ 
+                currentOpt = currentRoadTile.getNextPoint("Down");
+                while (currentOpt.checkPoint(conditions))
+                {
+                    var current = currentOpt.fold(
+                        () => { throw new Exception("Tower cannot be generated"); }, point => point);
+
                     var offset = current.y - currentRoadTile.y;
-                    if (getProbability(towerInfos[roadTileIndex], offset, towerInfos) >= 0.4) {
+                    if (getProbability(towerInfos[roadTileIndex], offset, towerInfos) >= 0.4)
+                    {
+
                         Debug.Log(getProbability(towerInfos[roadTileIndex], offset, towerInfos));
+
                         var generatedTile = TileFactory.makeTowerTile(
                             prefab, startPos, current, roadTiles, towerRange, conditions);
                         generatedTiles.Add(generatedTile);
                         currentTowerCount++;
                     }
-                    current = current.getNextPoint("Down");
+                    currentOpt = current.getNextPoint("Down");
                 }
                 roadTileIndex++;
             }
+            
             return generatedTiles;
         }
 

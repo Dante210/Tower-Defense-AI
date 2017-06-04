@@ -1,77 +1,63 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using OptionLib;
 using UnityEngine;
-using Random = System.Random;
 
 namespace Assets.Scripts
 {
-    public class RoadGenerator : IConditions
+    public class RoadGenerator
     {
-        public RoadGenerator(Point min, Point max) {
+        public RoadGenerator(Point min, Point max, List<Func<IPoint, bool>> conditions) {
             this.min = min;
             this.max = max;
+            this.conditions = conditions;
 
             generatedRoadTiles = new List<RoadTile>();
-            setConditions();
         }
 
         public List<RoadTile> generatedRoadTiles { get; }
 
-         Point min { get; }
-         Point max { get; }
+        readonly List<Func<IPoint, bool>> conditions;
+        Point min { get; }
+        Point max { get; }
 
 
-        public List<RoadTile> generateRoad(
-            GameObject prefab, Vector3 startPos, Func<int, bool> finish,
-            List<RoadInfo> roadInfos, Dictionary<string, Func<RoadTile, IPoint, bool>> roadPath) {
+        public List<RoadTile> generate(
+            GameObject prefab, Vector3 startPos, Func<IPoint, bool> finish,
+            List<RoadInfo> roadInfos, Dictionary<string, Func<IPoint, IPoint, bool>> roadPath) {
             var indexInSequence = 0;
-            var startPoint = getRandomStartPoint();
+            var startPoint = Point.randomPoint(new Point(0,0), new Point(min.y,max.y));
             var currentTile = TileFactory.makeRoadTile(prefab, startPos, startPoint);
             generatedRoadTiles.Add(currentTile);
-            while (!finish(currentTile.x)) {
-                var nextTile = next(currentTile, roadInfos[indexInSequence++], setConditions());
-                var somePoint = nextTile.fold(
-                    //If next tile is none let's reset everything and start from start with different startPoint
-                    () => {
+
+            while (!finish(currentTile)) {
+                var nextTile = next(currentTile, roadInfos[indexInSequence++], conditions);
+                nextTile.fold(
+                    onNone: () => {
                         generatedRoadTiles.Clear();
-                        generateRoad(prefab, startPos, finish, roadInfos, roadPath);
-                    },
-                    point => point);
-                var generatedTile = TileFactory.makeRoadTile(prefab, startPos, new Point(somePoint));
-                generatedRoadTiles.Add(generatedTile);
-                currentTile.setRoadDirection(new Point(generatedTile), roadPath);
-                currentTile = generatedTile;
+                        generate(prefab, startPos, finish, roadInfos, roadPath);
+                    }, onSome: point => {
+                        var generatedTile = TileFactory.makeRoadTile(prefab, startPos, point);
+                        generatedRoadTiles.Add(generatedTile);
+                        currentTile.setRoadDirection(point, roadPath);
+                        currentTile = generatedTile;
+                    });
             }
             return generatedRoadTiles;
         }
 
-        Point getRandomStartPoint() {
-            var random = new Random();
-            var randomY = random.Next(min.y, max.y);
-            var startPoint = new Point(min.x, randomY);
-            return startPoint;
-        }
-
+        
+        //Pure
         static Option<Point> next(
             IPoint current, RoadInfo currentInfo,
             IEnumerable<Func<IPoint, bool>> conditions) {
-            var leads = currentInfo.values.OrderByDescending(pair => pair.Value);
+            var leads = currentInfo.counts.calculateValues().OrderByDescending(pair => pair.Value);
             foreach (var lead in leads) {
                 var nextPoint = current.getNextPoint(lead.Key);
-                if (nextPoint.checkPoint(conditions)) return Option.some(nextPoint);
-                else return Option.none();
+                if (nextPoint.checkPoint(conditions)) return nextPoint;
             }
-            throw new ArgumentException();
+            return Option.None;
         }
-
-        public List<Func<IPoint, bool>> setConditions() {
-            var temp = new List<Func<IPoint, bool>> {
-                point => !generatedRoadTiles.containsPoint(point),
-                point => point.x >= min.x && point.x <= max.x,
-                point => point.y >= min.y && point.y <= max.y
-            };
-            return temp;
-        }
-    }
+     }
 }

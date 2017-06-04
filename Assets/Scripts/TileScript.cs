@@ -4,10 +4,6 @@ using UnityEngine;
 
 namespace Assets.Scripts
 {
-    public interface IConditions
-    {
-        List<Func<IPoint, bool>> setConditions();
-    }
 
     public class TileScript : MonoBehaviour
     {
